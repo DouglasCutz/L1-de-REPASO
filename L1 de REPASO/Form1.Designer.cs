@@ -49,6 +49,10 @@ namespace L1_de_REPASO
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.btn_ingreso1 = new System.Windows.Forms.Button();
             this.Ingreso2 = new System.Windows.Forms.Button();
+            this.btn_buscar = new System.Windows.Forms.Button();
+            this.lab_nom = new System.Windows.Forms.Label();
+            this.lab_sueldo = new System.Windows.Forms.Label();
+            this.lab_mes = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -77,7 +81,7 @@ namespace L1_de_REPASO
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(666, 691);
+            this.comboBox1.Location = new System.Drawing.Point(666, 611);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(326, 24);
             this.comboBox1.TabIndex = 2;
@@ -228,11 +232,52 @@ namespace L1_de_REPASO
             this.Ingreso2.UseVisualStyleBackColor = true;
             this.Ingreso2.Click += new System.EventHandler(this.Ingreso2_Click);
             // 
+            // btn_buscar
+            // 
+            this.btn_buscar.Location = new System.Drawing.Point(1022, 611);
+            this.btn_buscar.Name = "btn_buscar";
+            this.btn_buscar.Size = new System.Drawing.Size(81, 25);
+            this.btn_buscar.TabIndex = 21;
+            this.btn_buscar.Text = "Buscar";
+            this.btn_buscar.UseVisualStyleBackColor = true;
+            this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
+            // 
+            // lab_nom
+            // 
+            this.lab_nom.AutoSize = true;
+            this.lab_nom.Location = new System.Drawing.Point(679, 718);
+            this.lab_nom.Name = "lab_nom";
+            this.lab_nom.Size = new System.Drawing.Size(16, 17);
+            this.lab_nom.TabIndex = 22;
+            this.lab_nom.Text = "0";
+            // 
+            // lab_sueldo
+            // 
+            this.lab_sueldo.AutoSize = true;
+            this.lab_sueldo.Location = new System.Drawing.Point(955, 718);
+            this.lab_sueldo.Name = "lab_sueldo";
+            this.lab_sueldo.Size = new System.Drawing.Size(16, 17);
+            this.lab_sueldo.TabIndex = 23;
+            this.lab_sueldo.Text = "0";
+            // 
+            // lab_mes
+            // 
+            this.lab_mes.AutoSize = true;
+            this.lab_mes.Location = new System.Drawing.Point(819, 718);
+            this.lab_mes.Name = "lab_mes";
+            this.lab_mes.Size = new System.Drawing.Size(16, 17);
+            this.lab_mes.TabIndex = 24;
+            this.lab_mes.Text = "0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1104, 773);
+            this.ClientSize = new System.Drawing.Size(1122, 773);
+            this.Controls.Add(this.lab_mes);
+            this.Controls.Add(this.lab_sueldo);
+            this.Controls.Add(this.lab_nom);
+            this.Controls.Add(this.btn_buscar);
             this.Controls.Add(this.Ingreso2);
             this.Controls.Add(this.btn_ingreso1);
             this.Controls.Add(this.dataGridView3);
@@ -285,6 +330,10 @@ namespace L1_de_REPASO
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.Button btn_ingreso1;
         private System.Windows.Forms.Button Ingreso2;
+        private System.Windows.Forms.Button btn_buscar;
+        private System.Windows.Forms.Label lab_nom;
+        private System.Windows.Forms.Label lab_sueldo;
+        private System.Windows.Forms.Label lab_mes;
     }
 }
 

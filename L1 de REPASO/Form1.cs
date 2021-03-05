@@ -16,7 +16,8 @@ namespace L1_de_REPASO
     {
         List<Empleados> empleados = new List<Empleados>();
         List<Asistencia> asistencias = new List<Asistencia>();
-       
+        List<Reporte> reportes = new List<Reporte>();
+
         public Form1()
         {
             InitializeComponent();
@@ -170,6 +171,12 @@ namespace L1_de_REPASO
         {
             CargarEm("Empleados.txt");
 
+            comboBox1.DisplayMember = "Nombre";
+            comboBox1.ValueMember = "Codigo";
+            comboBox1.DataSource = null;
+            comboBox1.DataSource = empleados;
+            comboBox1.Refresh();
+
             CargarAs("Asistencias.txt");
 
             Mostrar1();
@@ -180,7 +187,7 @@ namespace L1_de_REPASO
 
         private void btn_Calcular_Click(object sender, EventArgs e)
         {
-            List<Reporte> reportes = new List<Reporte>();
+            
            
             for (int i = 0; i < empleados.Count; i ++)
             {
@@ -206,6 +213,17 @@ namespace L1_de_REPASO
             dataGridView3.Refresh();
 
 
+        }
+
+        private void btn_buscar_Click(object sender, EventArgs e)
+        {
+            int codi = Convert.ToInt32(comboBox1.SelectedValue);
+
+            Reporte reporte = reportes.Find(s => s.Codigo == codi);
+
+            lab_nom.Text = reporte.Nombre;
+            lab_mes.Text = reporte.Mes;
+            lab_sueldo.Text = reporte.Salario.ToString();
         }
     }
 }
