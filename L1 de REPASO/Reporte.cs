@@ -6,14 +6,17 @@ using System.Threading.Tasks;
 
 namespace L1_de_REPASO
 {
-    class Asistencia
+    class Reporte
     {
         int codigo;
-        int horaMes;
+        string nombre;
         string mes;
+        float salario;
 
         public int Codigo { get => codigo; set => codigo = value; }
-        public int HoraMes { get => horaMes; set => horaMes = value; }
+        public string Nombre { get => nombre; set => nombre = value; }
+        
         public string Mes { get => mes; set => mes = value; }
+        public float Salario { get => salario; set => salario = value; }
     }
 }

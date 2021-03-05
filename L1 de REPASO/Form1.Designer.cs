@@ -32,8 +32,8 @@ namespace L1_de_REPASO
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_Cargar = new System.Windows.Forms.Button();
+            this.btn_Calcular = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.tx_codigo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -77,28 +77,30 @@ namespace L1_de_REPASO
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(686, 598);
+            this.comboBox1.Location = new System.Drawing.Point(666, 691);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(326, 24);
             this.comboBox1.TabIndex = 2;
             // 
-            // button1
+            // btn_Cargar
             // 
-            this.button1.Location = new System.Drawing.Point(239, 450);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(148, 46);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Cargar Datos";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_Cargar.Location = new System.Drawing.Point(239, 450);
+            this.btn_Cargar.Name = "btn_Cargar";
+            this.btn_Cargar.Size = new System.Drawing.Size(148, 46);
+            this.btn_Cargar.TabIndex = 3;
+            this.btn_Cargar.Text = "Cargar Datos";
+            this.btn_Cargar.UseVisualStyleBackColor = true;
+            this.btn_Cargar.Click += new System.EventHandler(this.btn_Cargar_Click);
             // 
-            // button2
+            // btn_Calcular
             // 
-            this.button2.Location = new System.Drawing.Point(766, 539);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(167, 34);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Sueldo del empleado";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_Calcular.Location = new System.Drawing.Point(666, 539);
+            this.btn_Calcular.Name = "btn_Calcular";
+            this.btn_Calcular.Size = new System.Drawing.Size(167, 34);
+            this.btn_Calcular.TabIndex = 4;
+            this.btn_Calcular.Text = "Calcular Sueldos";
+            this.btn_Calcular.UseVisualStyleBackColor = true;
+            this.btn_Calcular.Click += new System.EventHandler(this.btn_Calcular_Click);
             // 
             // label1
             // 
@@ -224,6 +226,7 @@ namespace L1_de_REPASO
             this.Ingreso2.TabIndex = 20;
             this.Ingreso2.Text = "Ingresar";
             this.Ingreso2.UseVisualStyleBackColor = true;
+            this.Ingreso2.Click += new System.EventHandler(this.Ingreso2_Click);
             // 
             // Form1
             // 
@@ -245,8 +248,8 @@ namespace L1_de_REPASO
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tx_codigo);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_Calcular);
+            this.Controls.Add(this.btn_Cargar);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
@@ -265,8 +268,8 @@ namespace L1_de_REPASO
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_Cargar;
+        private System.Windows.Forms.Button btn_Calcular;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tx_codigo;
         private System.Windows.Forms.Label label2;
